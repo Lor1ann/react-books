@@ -13,12 +13,12 @@ const Card = ({ author, title, imgUrl, id, category }) => {
           <p>{category}</p>
         </div>
         <div className={styles.title}>
-          <h3>{title}</h3>
+          <h3>{title.substr(0, 60)}</h3>
         </div>
         <div className={styles.author}>
           <p>
             {author &&
-              author.map((el) => {
+              author.slice(0, 3).map((el) => {
                 return <p>{el}</p>;
               })}
           </p>

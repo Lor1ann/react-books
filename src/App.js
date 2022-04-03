@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setBooks } from "./redux/actions/books";
 
 function App() {
-  const state = useSelector((state) => state);
   const dispatch = useDispatch();
 
   React.useEffect(() => {

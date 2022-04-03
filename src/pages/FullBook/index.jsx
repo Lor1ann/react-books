@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
 import styles from "./FullBook.module.scss";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -23,7 +22,6 @@ const FullBook = () => {
 
   return (
     <div className={styles.root}>
-      <Header />
       {book ? (
         <div className={styles.book}>
           <div className={styles.bookImg}>

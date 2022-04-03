@@ -4,7 +4,7 @@ import Card from "../../components/Card";
 import styles from "./Home.module.scss";
 import Skeleton from "@mui/material/Skeleton";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Home = () => {
   const books = useSelector((state) => state.items);
