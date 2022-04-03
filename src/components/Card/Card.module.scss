@@ -1,0 +1,53 @@
+.root {
+  box-shadow: 2px 1px 8px rgb(212, 212, 212);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 200px;
+  min-height: 400px;
+  background-color: rgb(238, 238, 238);
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: 1px solid rgb(230, 230, 230);
+  margin-bottom: 30px;
+  p {
+    margin: 0;
+  }
+
+  img {
+    max-width: 150px;
+    align-self: center;
+    box-shadow: 10px 9px 8px rgb(165, 165, 165);
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .noBook {
+    width: 150px;
+    height: 200px;
+    background-color: rgb(209, 209, 209);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .category {
+      margin-bottom: 10px;
+      color: rgb(134, 134, 134);
+      text-decoration: underline;
+    }
+    .title {
+      margin-bottom: 10px;
+    }
+    .author {
+      color: rgb(134, 134, 134);
+    }
+  }
+}
+
+.root:hover {
+  transform: scale(1.03) translateY(-5px);
+}
